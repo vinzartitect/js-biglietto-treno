@@ -1,0 +1,34 @@
+.main {
+    background-color: rgb(192, 50, 50);
+    height: 250px;
+}
+
+#totale {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    background-color: rgb(151, 151, 151);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.titolone {
+    color: white;
+    font-size: 40px;
+}
+
+.saluti {
+    color: white;
+    font-size: 20px;
+}
+
+.credit {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin: 15px;
+}
+
+.footer {
+    background-color: rgb(151, 151, 151);
+    height: 50px;
+}
