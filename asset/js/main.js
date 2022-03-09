@@ -1,4 +1,4 @@
-// prompt per chiedere i km da percorrere
+//prompt per chiedere i km da percorrere
 const inputKm = prompt("inserisci i km da percorrere");
 console.log(inputKm);
 
@@ -6,11 +6,11 @@ console.log(inputKm);
 const inputEta = prompt("inserisci la tua età anagrafica");
 console.log(inputEta);
 
-// calcolare i km da percorrere x 0.21 euro al km
+//calcolare i km da percorrere x 0.21 euro al km
 let prezzoBase = inputKm * 0.21;
 console.log('Prezzo Base: ' + prezzoBase.toFixed(2) + '€');
 
-//condizione if per calcolare sconto minorenne
+//condizione if per calcolare sconto
 let prezzoFinale;
 
 if (inputEta < 18) {
@@ -33,6 +33,8 @@ if (inputEta < 18) {
     prezzoFinale = prezzoBase;
 
 }
+
+//output del prezzo finale con massimo due decimali
 
 prezzoFinale = prezzoFinale.toFixed(2);
 
