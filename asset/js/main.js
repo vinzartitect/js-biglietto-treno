@@ -8,12 +8,13 @@ console.log(inputEta);
 
 // calcolare i km da percorrere x 0.21 euro al km
 const prezzoBase = inputKm * 0.21;
+// prezzoBase = prezzoBase.toFixed(2);
 console.log('Prezzo Base: ' + prezzoBase + '€');
 
 //condizione if per calcolare sconto minorenne
 if (inputEta < 18) {
     const scontoMin = prezzoBase * 0.20;
-    const prezzoScontoMin = Math.floor(prezzoBase - scontoMin);
+    const prezzoScontoMin = (prezzoBase - scontoMin);
     prezzoSconto = prezzoScontoMin.toFixed(2);
     console.log('Prezzo Scontato: ' + prezzoScontoMin + '€');
 }  else if (inputEta >=65) {
